@@ -31,7 +31,7 @@
     z-index: 0;
   }
 
-  @include mix.hover(all, 0.3s, ease-in-out) {
+  @include mix.hoverActive(all, 0.3s, ease-in-out) {
     cursor: pointer;
 
     &::after {

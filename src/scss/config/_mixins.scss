@@ -25,7 +25,11 @@
   }
 }
 
-@mixin hover($property, $duration, $function) {
+@mixin hoverActive($property, $duration, $function) {
+  &:active {
+    @content;
+  }
+
   @media (hover: hover) {
     transition: $property $duration $function;
 
@@ -59,7 +63,7 @@
     width: auto;
   }
 
-  @include hover(background-color, 0.3s, ease-in-out) {
+  @include hoverActive(background-color, 0.3s, ease-in-out) {
     background-color: color.scale($bgColor, $lightness: -10%);
     cursor: pointer;
   }
