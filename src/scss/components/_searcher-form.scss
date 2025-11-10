@@ -32,7 +32,7 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    @include mix.hoverActive(background-color, 0.3s, ease-in-out) {
+    @include mix.hover(background-color, 0.3s, ease-in-out) {
       background-color: var.$secondary-color;
       cursor: pointer;
     }

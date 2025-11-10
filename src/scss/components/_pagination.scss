@@ -25,7 +25,7 @@
     font-weight: bold;
     cursor: pointer;
 
-    @include mix.hoverActive(background-color, 0.3s, ease-in-out) {
+    @include mix.hover(background-color, 0.3s, ease-in-out) {
       background-color: var.$secondary-color;
     }
   }

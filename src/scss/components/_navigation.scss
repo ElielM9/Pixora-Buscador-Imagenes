@@ -27,7 +27,7 @@
       padding: 0.3rem;
     }
 
-    @include mix.hoverActive(border, 0.3s, ease-in-out) {
+    @include mix.hover(border, 0.3s, ease-in-out) {
       border-bottom: 0.3rem solid var.$white;
     }
   }

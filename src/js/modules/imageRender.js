@@ -14,6 +14,7 @@ export function renderImages(images, totalPages, currentPage) {
 
     const imgItem = document.createElement(`div`);
     imgItem.classList.add(`gallery-item`);
+    imgItem.setAttribute(`tabindex`, `0`);
     imgItem.innerHTML = `
       <img src="${largeImageURL}" class="gallery-item__img" />
       <div class="gallery-item__info">
